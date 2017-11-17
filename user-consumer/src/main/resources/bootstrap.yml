@@ -1,0 +1,15 @@
+#服务应用名称
+spring:
+  application:
+    name: user-consumer
+    desc: 用户中心调用者
+    
+#服务端口号 
+server:
+  port: 9002   
+
+#eureka服务与发现注册中心地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone : http://localhost:8888/eureka/
