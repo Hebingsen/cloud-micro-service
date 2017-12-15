@@ -1,5 +1,6 @@
 package com.sky;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
@@ -11,6 +12,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  * @时间 2017年11月13日
  * @公司 sky
  */
+@Slf4j
 @SpringCloudApplication
 @EnableFeignClients
 public class UserConsumerApplication {
@@ -19,6 +21,6 @@ public class UserConsumerApplication {
 		ConfigurableApplicationContext context = SpringApplication.run(UserConsumerApplication.class, args);
 		String port = context.getEnvironment().getProperty("server.port");
 		String desc = context.getEnvironment().getProperty("spring.application.desc");
-		System.err.println(desc + "服务启动成功,端口号为:" + port);
+		log.info(desc + "服务启动成功,端口号为:" + port);
 	}
 }
