@@ -1,0 +1,9 @@
+#应用信息
+spring:
+  application:
+    name: api-gateway
+    desc: 网关中心
+
+#服务端口号
+server:
+  port: 8899
