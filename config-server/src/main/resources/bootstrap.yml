@@ -1,0 +1,16 @@
+#应用信息
+spring:
+  application:
+    name: config-server
+    desc: 分布式配置中心
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Hebingsen/cloud-micro-service/
+          search-paths: config-repo
+
+#服务端口号
+server:
+  port: 7777
+
