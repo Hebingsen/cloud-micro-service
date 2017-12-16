@@ -1,0 +1,22 @@
+#应用信息
+spring:
+  application:
+    name: api-gateway
+    desc: 网关中心
+
+#服务端口号
+server:
+  port: 8899
+
+
+#日志配置
+logging:
+  level:
+    org.springframework:
+      security: DEBUG
+
+#eureka服务与发现注册中心地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://111.230.253.48:8888/eureka/
