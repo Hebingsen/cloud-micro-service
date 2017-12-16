@@ -15,6 +15,12 @@
 
 	<dependencies>
 
+		<!-- spring-cloud-config-client 分布式配置中心客户端 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-config-client</artifactId>
+		</dependency>
+
 		<!-- spring-cloud 断路器 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -39,12 +45,6 @@
 			<groupId>com.sky</groupId>
 			<artifactId>mapper</artifactId>
 			<version>${project.version}</version>
-		</dependency>
-
-		<!-- 分布式配置中心客户端 -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
 
 		<!-- 注册中心客户端 -->

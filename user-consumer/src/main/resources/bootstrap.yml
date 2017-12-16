@@ -3,6 +3,14 @@ spring:
   application:
     name: user-consumer
     desc: 用户中心调用者
+  cloud:
+    config:
+      #配置中心地址
+      uri: http://localhost:7777/
+      #环境
+      profile: default
+      #分支
+      label: master
     
 #服务端口号 
 server:
