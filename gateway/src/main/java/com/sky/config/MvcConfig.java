@@ -1,15 +1,15 @@
 package com.sky.config;
 
-import com.sky.base.Constant;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
+import com.sky.base.Constant;
+
 
 @Configuration
-//@EnableWebMvc
 public class MvcConfig extends WebMvcConfigurerAdapter {
 
 	/**
@@ -18,6 +18,7 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
 		registry.addRedirectViewController("/", "/swagger-ui.html");
+
 	}
 
 	/**
