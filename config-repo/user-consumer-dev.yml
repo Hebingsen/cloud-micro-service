@@ -1,0 +1,25 @@
+#开发环境
+spring:
+  #应用信息
+  application:
+    name: user-consumer
+    desc: 用户中心服务调用者
+  #数据源配置
+     datasource:
+       url: jdbc:mysql://119.23.208.37:3306/sky?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&autoReconnect=true&useSSL=false
+       username: root
+       password: Hebs8169816~!@
+     redis:
+       host: 119.23.208.37
+       port: 6379
+
+#服务端口号
+server:
+  port: 9002
+
+#eureka服务与发现注册中心地址
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://119.23.208.37:8888/eureka/
+
