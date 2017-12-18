@@ -2,7 +2,6 @@
 spring:
   application:
     name: api-gateway
-    desc: 网关中心
   #数据源配置
     datasource:
       url: jdbc:mysql://119.23.208.37:3306/sky?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&autoReconnect=true&useSSL=false
