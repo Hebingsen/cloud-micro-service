@@ -4,13 +4,13 @@ spring:
   application:
     name: user-consumer
   #数据源配置
-     datasource:
-       url: jdbc:mysql://119.23.208.37:3306/sky?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&autoReconnect=true&useSSL=false
-       username: root
-       password: Hebs8169816~!@
-     redis:
-       host: 119.23.208.37
-       port: 6379
+  datasource:
+    url: jdbc:mysql://119.23.208.37:3306/sky?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&autoReconnect=true&useSSL=false
+    username: root
+    password: Hebs8169816~!@
+  redis:
+    host: 119.23.208.37
+    port: 6379
 
 #服务端口号
 server:

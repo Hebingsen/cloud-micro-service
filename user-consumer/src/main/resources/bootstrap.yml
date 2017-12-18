@@ -6,18 +6,8 @@ spring:
   cloud:
     config:
       #配置中心地址
-      uri: http://localhost:7777/
+      uri: http://111.230.253.48:7777/
       #环境
-      profile: default
+      profile: dev
       #分支
       label: master
-    
-#服务端口号 
-server:
-  port: 9002   
-
-#eureka服务与发现注册中心地址
-eureka:
-  client:
-    serviceUrl:
-      defaultZone : http://localhost:8888/eureka/
