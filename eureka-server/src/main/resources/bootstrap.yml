@@ -8,7 +8,6 @@ spring:
 #服务端口号 
 server:
   port: 8888
-      
 
 #eureka服务与发现注册中心地址
 eureka:
@@ -17,8 +16,11 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-  
-logging :
-  file: /Users/hebe/logs/${spring.application.name}.log
+
+#springboot 1.5.X 以上默认开通了安全认证，需要关闭,否则使用不了actuator提供的refresh动态刷新功能
+management:
+  security:
+    enabled : false
+
       
       

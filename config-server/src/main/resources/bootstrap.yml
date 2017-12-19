@@ -14,3 +14,8 @@ spring:
 server:
   port: 7777
 
+#springboot 1.5.X 以上默认开通了安全认证，需要关闭,否则使用不了actuator提供的refresh动态刷新功能
+management:
+  security:
+    enabled : false
+

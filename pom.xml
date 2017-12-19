@@ -68,11 +68,18 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- 应用监控 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-actuator</artifactId>
+        </dependency>
+
     </dependencies>
 
     <!--依赖管理，用于管理spring-cloud的依赖，其中Dalston.SR4是版本号 -->
     <dependencyManagement>
         <dependencies>
+
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
@@ -80,18 +87,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
-            <!-- <dependency>
-                <groupId>com.sky</groupId>
-                <artifactId>mapper</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.sky</groupId>
-                <artifactId>user-service</artifactId>
-                <version>${project.version}</version>
-            </dependency> -->
 
         </dependencies>
     </dependencyManagement>
