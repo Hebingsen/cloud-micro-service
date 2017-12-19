@@ -74,6 +74,7 @@
             <artifactId>spring-boot-actuator</artifactId>
         </dependency>
 
+
     </dependencies>
 
     <!--依赖管理，用于管理spring-cloud的依赖，其中Dalston.SR4是版本号 -->
