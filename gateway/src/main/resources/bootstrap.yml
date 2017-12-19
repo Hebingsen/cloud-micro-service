@@ -6,8 +6,8 @@ spring:
   cloud:
     config:
       #配置中心地址(目前分布式配置中心服务部署在腾讯云服务器111.230.253.48)
-      #uri: http://111.230.253.48:7777/
-      uri: http://localhost:7777/
+      uri: http://111.230.253.48:7777/
+      #uri: http://localhost:7777/
       #环境
       profile: dev
       #分支
